@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class WeatherTest extends TestCase {
 
-    public void testGetTemp() {
+    public void testGetTempShouldGet12() {
         double expectedTemp = 12;
         Weather weather = new Weather(12, 7,3,5);
         weather.setTemp(expectedTemp);

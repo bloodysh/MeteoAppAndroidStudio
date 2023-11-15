@@ -26,7 +26,6 @@
         android:layout_height="73dp"
         android:ems="10"
         android:inputType="text"
-        android:text="City"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -36,8 +35,8 @@
 
     <TextView
         android:id="@+id/textViewVille"
-        android:layout_width="152dp"
-        android:layout_height="39dp"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
         android:text="Ville:"
         android:textAlignment="center"
         android:textSize="34sp"

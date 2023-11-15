@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
     TextView textViewMin;
     TextView textViewMax;
     TextView textDateTime;
-
+    TextView textViewVille;
+    EditText editVille;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         textViewMin = findViewById(R.id.textViewMin);
         textViewMax = findViewById(R.id.textViewRMax);
         textDateTime = findViewById(R.id.textViewDateTime);
+        textViewVille = findViewById(R.id.textViewVille);
+        editVille = findViewById(R.id.editTextVille);
 
         MyWeatherService service = MyWeatherService.retrofit.create(MyWeatherService.class);
         String apiKey = "f93a6bbe8570dd012d393e3105a54078";
@@ -88,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
                                 textViewMin.setText(minim + " °C");
                                 textViewMax.setText(maxi + " °C");
                                 textDateTime.setText("" + formattedDate);
+                                textViewVille.setText(editVille.getText().toString());
 
                             }
                         }
